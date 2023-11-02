@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lost and Found Item</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="L&F.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="brand">
+                <a class="nav-link" href="#">StudNet</a>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" id="home" href="#">Home</a>
+                <a class="nav-link" id="about" href="#">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+       
+    <div class="container pt-3">
+        <h2>Lost and Found Item Form</h2>
+        <form id="lostFoundForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="item">Item Details:</label>
+                <textarea class="form-control" id="item" name="item" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Pictures:</label>
+                <input type="file" class="form-control-file" id="image" name="image" >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container">
+        
+        <h2>Lost and Found Items</h2>
+        <div id="itemList"></div>
+    </div> 
+</div>
+
+    <!-- Add Bootstrap JS and your custom JavaScript code here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById("lostFoundForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const itemDescription = document.getElementById("item").value;
+            const images = document.getElementById("image").files;
+
+            displayItem({
+                name,
+                phone,
+                itemDescription,
+                images
+            });
+
+            document.getElementById("lostFoundForm").reset();
+        });
+
+        function displayItem(item) {
+            const itemCard = document.createElement("div");
+            itemCard.className = "card mb-3";
+
+            let imageHtml = "";
+            for (let i = 0; i < item.images.length; i++) {
+                const imageUrl = URL.createObjectURL(item.images[i]);
+                imageHtml += `<img src="${imageUrl}" class="card-img-top" alt="Item Image">`;
+            }
+
+            itemCard.innerHTML = `
+                ${imageHtml}
+                <div class="card-body">
+                    <h5 class="card-title">${item.name}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">${item.phone}</h6>
+                    <p class="card-text">${item.itemDescription}</p>
+                </div>
+            `;
+
+            document.getElementById("itemList").appendChild(itemCard);
+        }
+    </script>
+</body>
+</html>

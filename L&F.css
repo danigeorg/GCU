@@ -1,0 +1,70 @@
+body{
+    background:linear-gradient(45deg,#54C722,#658354,#9A9672,#004E70);
+    height: 100%;
+}
+
+card-img-top {
+    flex-shrink: 0;
+    width: 40%;
+    height: 50%;
+}
+
+.form-control {
+    display: block;
+    width: 40%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.navbar {
+    background-color: #658354;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.brand {
+    float: left;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+
+.nav-links {
+    float: right; 
+}
+
+
+.nav-link {
+    display: inline-block;
+    padding: 2px 16px;
+    margin-right: 75px;
+    text-decoration: none;
+    color: #ffffff; 
+    color: black;
+}
+
+
+.nav-link#home {
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 18px; 
+}
+
+
+.nav-link#about {
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 18px; 
+}

@@ -1,0 +1,18 @@
+
+h2{
+    color: black;
+    padding-top: 12px;
+}
+section{
+    background: linear-gradient(180deg,#02C37E,#02C37E,#024e35c2,#143D40);  
+    color: #ffffff;
+}
+p{
+    padding-top: 32px;
+    
+} iframe{
+    align-items: center;
+}
+.events{
+    padding-top: 0px;
+}

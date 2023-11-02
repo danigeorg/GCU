@@ -1,0 +1,467 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    text-decoration: none;
+    
+}
+
+/*adding bg clr*/body{
+    background:linear-gradient(180deg,#02C37E,#02C37E,#024e35c2,#143D40);
+    background-size: 100% 900px ;
+    background-repeat: no-repeat;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/*header bar color-style-display*/.heading{
+    display: inline-block;
+    position: relative;
+    background-color: black;
+    opacity: 0.6;
+    height: 80px;
+    width: 100%;
+} 
+
+/*main name style-clr-font-size*/.title{
+    display: inline-block;
+    position: relative;
+   
+    bottom: 90px;
+    left: 30px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+/*nav buttons position-display*/.navigation{
+    display: inline-block;
+    position: relative;
+
+    left: 900px;
+    bottom: 95px;
+}
+
+
+/*info button properties*/.info{
+    display: inline-block;
+    position: relative;
+    right: 2px;
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 18px;
+
+    transition-property: transform;
+    transition-duration: 2sec;
+    transition-delay: 0.5sec;
+    transition-timing-function: ease-in-out;
+}
+.info:hover{
+    transform: translateY(-2px);
+    background-color: #00AC8D;
+}
+
+/*help button properties*/.help{
+    display: inline-block;
+    position: relative;
+    right: 30px;
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 18px;
+
+    transition-property: transform;
+    transition-duration: 2sec;
+    transition-delay: 0.5sec;
+    transition-timing-function: ease-in-out;
+}
+.help:hover{
+    transform: translateY(-2px);
+    background-color: #00AC8D;
+}
+
+/*the icon near uni-name size-pos*/.icon{
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+    left: 35px;
+
+    height: 30px;
+    width: 30px;
+}
+
+/*uni name-color-font-pos-display*/#uni{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+
+    display: inline-block;
+    position: relative;
+    bottom: 113px;
+    left: 35px;
+
+}
+
+/*aboutus font-display-pos*/#abt{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    bottom: 245px;
+    left: 80px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*paragraph about website display-pos*/#cont{
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    right: 25px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* profile section part */
+/* ------------------------------------------- */
+.profile{
+    display: inline-block;
+    position: relative;
+    left: 800px;
+    bottom: 300px;
+
+    background-color:#213638; 
+    color: white;
+    width: 350px;
+    height: 400px;
+    border: 4px solid #274620;
+    border-radius: 14px;
+
+}
+.profile:hover{
+    transform: none;
+    background: linear-gradient(45deg,#D1FAE0,#005B93,#00AF6B);
+    /* animation-delay: 0.3sec; */
+    border-radius: 4px solid #C0FAFF;
+}
+
+.prf{
+    height: 1px;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 12s;
+  
+}
+
+#username{
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    top: 90px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#followers{
+    display: inline-block;
+    position: relative;
+    top: 165px;
+    right: 45px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#following{
+    display: inline-block;
+    position: relative;
+    top: 130px;
+    left: 50px;   
+}
+
+#image{
+    display: inline-block;
+    position: relative;
+
+    left: 125px;
+    top: 50px;
+    background-color: red;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+/* ------------------------------------------ */
+
+
+
+/* trusted institute part */
+
+#trustname{
+    display: inline-block;
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#icon{
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    right: 130px;
+    height: 50px;
+}
+
+/*items design */#firstuni{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: 220px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+/*our features display-clr-size*/.features{
+    display: inline-block;
+    position: relative;
+
+    top: 250px;
+    left: 465px;
+    z-index: 2;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightgoldenrodyellow;
+}
+/* -------------------------------------------- */
+
+
+/* features part */
+
+/*itmes ka container di-pos-clr*/#containerproperty{
+    display: inline-block;
+    position: relative;
+    height: 664px;
+    width: 100%;
+
+    top: 200px;
+    background:linear-gradient(180deg,#49a521,#00AF6B,#3A4B40);
+
+    
+}
+
+.feature{
+    /* display: inline-block; */
+    position: relative;
+    top: 209px;
+    right: 0px;
+
+    border: 2px solid #143D40;
+    width: 99.7%;
+    height: 590px;
+    /* background-color: #143D40; */
+    background: linear-gradient(180deg,#143D40,#0e2a2c,#08191a);
+    animation: bg 12s ease-in-out infinite;
+    
+}
+@keyframes bg{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+/* ------------------------------------------- */
+
+
+/* lost and found */
+
+/*parent property*/#lostandfound{
+    display: inline-block;
+    position: relative;
+}
+    
+/*lost and found img-pos-dis*/#laf{
+    display: inline-block;
+    position: relative;
+    left: 27px;
+    top: 87px;
+    width: 300px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+#lostcont{
+    display: inline-block;
+    position: relative;
+    top: 111px;
+    right: 201px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.lostpar{
+    display: inline-block;
+    position: relative;
+    right: 373px;
+    top: 139px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+/* ---------------------------------------- */
+
+/* events */
+
+/* ---------------------------------------- */
+/*parent property*/#events{
+    display: inline-block;
+    position: relative;
+    right: 199px;
+}
+    
+/*event and found img-pos-dis*/#eve{
+    display: inline-block;
+    position: relative;
+    left: 27px;
+    top: 87px;
+    width: 300px;
+    height: 262px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+#eventtext{
+    display: inline-block;
+    position: relative;
+    top: 111px;
+    left: -353px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.eventpar{
+    display: inline-block;
+    position: relative;
+    right: 456px;
+    top: 139px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+/* ------------------------------------------- */
+
+/* community part */
+/*parent property*/#community{
+    display: inline-block;
+    position: relative;
+    right: -895px;
+    bottom: 286px;
+}
+    
+/*event and found img-pos-dis*/#comm{
+    display: inline-block;
+    position: relative;
+    left: 27px;
+    top: 87px;
+    width: 300px;
+    height: 257px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+#commtext{
+    display: inline-block;
+    position: relative;
+    top: -178px;
+    left: 733px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.commpar{
+    display: inline-block;
+    position: relative;
+    right: -540px;
+    top: -147px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+/* -------------------------------------------- */
+
+/* footer part */
+
+.footer{
+    display: inline-block;
+    position: relative;
+    color: white;
+    top: 140px;
+    background-color: black;
+    width: 100%;
+    height: 130px;
+}
+/* .footer{
+    background-color: black;
+    color: white;
+    
+} */
+
+.copyright{
+    display: inline-block;
+    position: relative;
+
+    top: 89px;
+    left: 571px;
+}
+
+#contact{
+    display: inline-block;
+    position: relative;
+
+    top: 32px;
+    left: 201px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}
+
+#insta{
+    display: inline-block;
+    position: relative;
+
+    top: 32px;
+    left: 309px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}
+
+#face{
+    display: inline-block;
+    position: relative;
+
+    top: 32px;
+    left: 407px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}
+
+#report{
+    display: inline-block;
+    position: relative;
+
+    top: 32px;
+    left: 532px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}
